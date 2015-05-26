@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane prefHeight="400.0" prefWidth="700.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="view.RootController">
+  <top>
+    <MenuBar>
+      <menus>
+        <Menu mnemonicParsing="false" text="Login" fx:id="menuLogin">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#bndeslogar" text="Deslogar" visible="false" fx:id="deslogar" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+  </top>
+</BorderPane>

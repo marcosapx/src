@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="user" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="376.0" prefWidth="700.0" style="-fx-background-color: #E6E6E6; " xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="view.LoginController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Pane layoutX="169.0" layoutY="55.0" prefHeight="221.0" prefWidth="363.0" style="-fx-background-color: #fff; &#10;  -fx-background-insets: 10; &#10;   -fx-background-radius: 10; &#10;  -fx-effect: dropshadow(three-pass-box, #000, 10, 0, 0, 0);">
+      <children>
+        <GridPane layoutX="33.0" layoutY="95.0" prefWidth="266.0">
+          <children>
+            <Label text="User" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <Label text="Senha" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <TextField fx:id="user" prefWidth="200.0" promptText="User" style="" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <PasswordField fx:id="senha" prefWidth="200.0" promptText="Password" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+          </children>
+          <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="200.0" />
+          </columnConstraints>
+          <rowConstraints>
+            <RowConstraints maxHeight="33.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="37.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          </rowConstraints>
+        </GridPane>
+        <Button layoutX="249.0" layoutY="168.0" mnemonicParsing="false" onAction="#ActBnLogin" prefWidth="50.0" text="Login" />
+        <Label layoutX="33.0" layoutY="34.0" prefWidth="216.0" text="User Login" wrapText="false">
+          <font>
+            <Font size="30.0" />
+          </font>
+        </Label>
+        <Label fx:id="loginStatus" layoutX="33.0" layoutY="167.0" text="" textFill="RED">
+          <font>
+            <Font size="14.0" />
+          </font>
+        </Label>
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>
